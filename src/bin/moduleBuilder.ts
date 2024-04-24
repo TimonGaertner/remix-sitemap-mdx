@@ -70,7 +70,8 @@ export function buildModule(file: string, plugins: Plugin[]) {
     bundle: true,
     packages: 'external',
     loader: {
-      '.js': 'jsx'
+      '.js': 'jsx',
+      '.mdx': 'jsx',
     },
     logLevel: 'silent',
     plugins
